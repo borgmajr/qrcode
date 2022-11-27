@@ -42,18 +42,26 @@
                 <option value="Icy conditions">Icy conditions</option>
                 <option value="Wheelchair button broke">Wheelchair button broke</option>
             </select>
+
         </div>
 
 
 
     </div>
     <div class="center">
-        <button type="button">Report Issue</button>
+        <button type="button" onclick="report()">Report Issue</button>
+    </div>
+    <div id="report-result" class="center">
     </div>
 
 
 </body>
 
+<script>
+    function report(){
+        document.getElementById("report-result").innerHTML = "<div style=\"color: red;\"><b>Report has been sent</b></div>";
+    }
+</script>
 
 
 </html>
