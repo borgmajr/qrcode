@@ -39,8 +39,10 @@
             <label for="issue">Choose an issue:</label>
             <select name="issue" id="issue">
                 <option value="Broken elevador">Broken elevador</option>
+                <option value="Graffiti">Graffiti</option>Graffiti
                 <option value="Icy conditions">Icy conditions</option>
                 <option value="Wheelchair button broke">Wheelchair button broke</option>
+                <option value="other">other</option>
             </select>
 
         </div>
@@ -48,6 +50,8 @@
 
 
     </div>
+
+    <div class="center">Add Notes: <input type="textarea"/></div>
     <div class="center">
         <button type="button" onclick="report()">Report Issue</button>
     </div>
@@ -58,7 +62,7 @@
 </body>
 
 <script>
-    function report(){
+    function report() {
         document.getElementById("report-result").innerHTML = "<div style=\"color: red;\"><b>Report has been sent</b></div>";
     }
 </script>
